@@ -1,0 +1,196 @@
+@font-face {
+  font-family: pixelB;
+  src: url("font/JF-Dot-Izumi16B.ttf");
+}
+@font-face {
+  font-family: pixelSB;
+  src: url("font/JF-Dot-Shinonome12B.ttf");
+}
+@font-face {
+  font-family: pixel;
+  src: url("font/JF-Dot-Shinonome16.ttf");
+}
+@font-face {
+  font-family: pixelS;
+  src: url("font/JF-Dot-ShinonomeMin16.ttf");
+}
+*{
+  padding: 0;
+  box-sizing: border-box;
+}
+.header{
+  width: 100%;
+  height: 100vh;
+}
+.logo a{
+  font-size: 50px;
+  font-family: pixelB;
+  color:black;
+}
+.num{
+  font-family: pixel;
+  font-size: 20px;
+  text-align: right;
+  line-height: 50%;
+}
+.work-name{
+  font-family: pixelB;
+  font-size: 20px;
+}
+.work-wrapper a,.header a{
+  color:black;
+}
+.month{
+  padding: 0 20px;
+  font-family: pixelSB;
+  font-size: 40px;
+  text-align: right;
+}
+.title{
+  padding: 0 20px;
+  font-family: pixelSB;
+  font-size: 40px;
+}
+.title-text{
+  width:960px;
+  font-family: pixelS;
+  font-size: 40px;
+  line-height: 150%;
+ }
+ .intro-text{
+  font-family: pixelS;
+  font-size: 25px;
+  line-height: 150%;
+ }
+.text{
+ font-family: pixel;
+ font-size: 17px;
+ line-height: 175%;
+}
+nav{
+  width: 100%;
+  display: flex;
+  align-items: center;
+ justify-content: space-between;
+ padding: 20px 0;
+ position: fixed;
+ z-index: 100;
+}
+nav ul li{
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+  font-family: pixel;
+}
+nav ul li a{
+  text-decoration: none;
+  color: black;
+}
+a:link,a:visited{ 
+  text-decoration:none;  /*超链接无下划线*/ 
+} 
+a:hover{
+  text-decoration:underline;  /*鼠标放上去有下划线*/ 
+} 
+.title img{
+  width: 100px;
+}
+.clg{
+  text-align:center;
+  margin:0 auto;
+}
+
+/*
+  宫格
+*/
+.box {
+  margin-left: 1%;
+}
+
+.box {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: pink;
+}
+
+.box3 {
+  background-color: blue;
+}
+
+.box4 {
+  background-color: red;
+}
+
+.box5 {
+  background-color: yellow;
+}
+
+.box6 {
+  background-color: fuchsia;
+}
+
+.box7 {
+  background-color: black;
+}
+
+.box8 {
+  background-color: indianred;
+}
+
+.box9 {
+  background-color: aquamarine;
+}
+
+
+.parent {
+  width: 100%;
+  height: 25%;
+  padding-right: 10px;
+}
+
+.box{
+  display: inline-block;
+  height: 100%;
+}
+
+.box-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.maskShow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 99;
+}
+
+
+#alert-photo-img{
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+
+}
+
+.page{
+  width:100px;
+  height:100px;
+  position:relative;
+}
+.textbg{
+  position:absolute;
+  left:0px;
+  top:0px;
+  width:100px;
+  height:100px;
+  z-index:-1;
+  color:#999999;
+}

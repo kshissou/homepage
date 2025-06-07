@@ -1,0 +1,241 @@
+@font-face {
+  font-family: pixelB;
+  src: url("font/JF-Dot-Izumi16B.ttf");
+}
+
+@font-face {
+  font-family: pixelSB;
+  src: url("font/JF-Dot-Shinonome12B.ttf");
+}
+
+@font-face {
+  font-family: pixel;
+  src: url("font/JF-Dot-Shinonome16.ttf");
+}
+
+@font-face {
+  font-family: pixelS;
+  src: url("font/JF-Dot-ShinonomeMin16.ttf");
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-size:cover;
+}
+
+* {
+  padding: 0;
+}
+
+body,html{
+  width: 100%;
+  height: auto;
+}
+
+.header {
+  width: 100%;
+  height: 100vh;
+}
+
+.logo a {
+  font-size: 50px;
+  font-family: pixelB;
+  color: black;
+}
+
+.num {
+  font-family: pixel;
+  font-size: 20px;
+  text-align: right;
+  line-height: 50%;
+}
+
+.work-name {
+  font-family: pixelB;
+  font-size: 20px;
+}
+
+.work-wrapper a,
+.header a {
+  color: black;
+}
+
+.month {
+  padding: 0 20px;
+  font-family: pixelSB;
+  font-size: 40px;
+  text-align: right;
+}
+
+.title {
+  padding: 0 20px;
+  font-family: pixelSB;
+  font-size: 40px;
+}
+
+.title-text {
+  width: 960px;
+  font-family: pixelS;
+  font-size: 40px;
+}
+
+.intro-text {
+  width: 960px;
+  font-family: pixelS;
+  font-size: 25px;
+}
+
+.text {
+  width: 960px;
+  font-family: pixel;
+  font-size: 17px;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 100;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 10px;
+  font-family: pixelSB;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link,
+a:visited {
+  text-decoration: none;
+  /*超链接无下划线*/
+}
+
+a:hover {
+  text-decoration: underline;
+  /*鼠标放上去有下划线*/
+}
+
+.title img {
+  width: 100px;
+}
+
+/*
+  宫格
+*/
+.box {
+  margin-left: 1%;
+}
+
+.box {
+  background-color: aqua;
+}
+
+.box2 {
+  background-color: pink;
+}
+
+.box3 {
+  background-color: blue;
+}
+
+.box4 {
+  background-color: red;
+}
+
+.box5 {
+  background-color: yellow;
+}
+
+.box6 {
+  background-color: fuchsia;
+}
+
+.box7 {
+  background-color: black;
+}
+
+.box8 {
+  background-color: indianred;
+}
+
+.box9 {
+  background-color: aquamarine;
+}
+
+
+.parent {
+  width: 100%;
+  height: 25%;
+  padding-right: 10px;
+}
+
+.box{
+  display: inline-block;
+  height: 100%;
+}
+
+.box-image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.maskShow{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 220vh;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 99;
+}
+
+
+#alert-photo-img{
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+
+}
+
+.box{
+  background-size: 100% 100%;
+}
+
+
+.alert-boss{
+  width: 100%;
+  height: 220vh;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px red solid;
+  text-align: center;
+ 
+}
+
+.alert-style{
+  z-index: 999;
+  width: 100%;
+  height: 220vh;
+ 
+}
+
+.image-style-div{
+  border: 5px white solid;
+  display: block;
+  display: inline-flex;
+  position: relative;
+  z-index: 999;
+}
+

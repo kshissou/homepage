@@ -1,0 +1,198 @@
+@font-face {
+  font-family: pixelB;
+  src: url("font/JF-Dot-Izumi16B.ttf");
+}
+@font-face {
+  font-family: pixelSB;
+  src: url("font/JF-Dot-Shinonome12B.ttf");
+}
+@font-face {
+  font-family: pixel;
+  src: url("font/JF-Dot-Shinonome16.ttf");
+}
+@font-face {
+  font-family: pixelS;
+  src: url("font/JF-Dot-ShinonomeMin16.ttf");
+}
+*{
+  cursor: none!important;
+}
+
+body {
+  background-image: url("bg.jpg");
+  background-size: auto; /* 或者去掉这一行，因为默认值就是 auto */
+  background-repeat: repeat; /* 使背景图在水平和垂直方向重复 */
+}
+
+#custom-cursor {
+  position: absolute;
+  width: 450px;
+  height: 450px;
+  background-image: url('cursor.png');
+  background-size: cover;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-25px, 0px);
+}
+
+* {
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.header {
+  width: 100%;
+  padding-bottom: 2rem; /* 替代多个 <br> */
+}
+
+.logo a {
+  font-size: 50px;
+  font-family: pixelB;
+  color: black;
+}
+
+.num {
+  font-family: pixel;
+  font-size: 20px;
+  text-align: right;
+  line-height: 50%;
+}
+
+.work-name, .engtitle {
+  font-family: pixelB;
+  font-size: 20px;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
+
+.work-wrapper a, .header a {
+  color: black;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px 0;
+  position: fixed;
+  z-index: 100;
+}
+
+nav ul, .text2 {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+nav ul li, .text2 li {
+  display: inline-block;
+  margin-right: 1rem;
+  font-family: pixelSB;
+}
+
+nav ul li a, .text2 li a {
+  text-decoration: none;
+  color: black;
+}
+
+a:link, a:visited {
+  color: black; /* 将黑色设置为链接的颜色 */
+  text-decoration: none; /* 可选：移除下划线 */
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* 新增的布局优化CSS */
+.hr-like {
+  border-bottom: 1px solid #ccc;
+  margin-bottom: 2rem;
+}
+
+.spacing {
+  margin-top: 2rem;
+}
+
+/* 用于替代 <hr> 的样式 */
+div.hr-like {
+  height: 1px;
+  background-color: #ccc;
+  margin: 2rem 0;
+}
+
+/* 解决内容重叠的问题 */
+.text2 {
+  font-family: pixel;
+  font-size: 20px;
+  padding-top: 100px; /* 调整以避免与顶部导航栏重叠 */
+}
+.title{
+  padding: 0 20px;
+  font-family: pixelSB;
+  font-size: 40px;
+}
+.title-text{
+  width:960px;
+  font-family: pixelS;
+  font-size: 40px;
+  line-height: 150%;
+ }
+
+ .intro-text{
+  font-family: pixelS;
+  font-size: 25px;
+  line-height: 150%;
+ }
+
+ .year{
+  font-family: pixel;
+  font-size: 20px;
+  padding-top: 100px; /* 调整以避免与顶部导航栏重叠 */
+}
+.text{
+ font-family: pixel;
+ font-size: 17px;
+ line-height: 175%;
+}
+.text3{
+  font-family: pixelSB;
+  font-size: 20px;
+  line-height: 175%;
+  display: flex;
+  align-items: center; 
+ }
+ .qr-image {
+  width: 100px;
+  height: 100px;
+  margin-left: 10px; /* 在图片和文字之间添加一些间隙 */
+}
+/* 新增样式 */
+.work-item {
+  position: relative;
+  display: inline-block; /* 或flex，根据需要调整 */
+}
+
+.toobig img {
+  width: 960px; /* 让图片宽度等于容器宽度 */
+  height: auto; /* 高度自动调整以保持宽高比 */
+}
+
+.tooobig img {
+  width: 720px; /* 让图片宽度等于容器宽度 */
+  height: auto; /* 高度自动调整以保持宽高比 */
+}
+
+.work-date {
+  position: absolute;
+  bottom: 10px; /* 调整日期距离底部的距离 */
+  right: 10px; /* 调整日期距离右侧的距离 */
+  background-color: rgba(255, 255, 255, 0.7); /* 轻微背景色增加可读性 */
+  padding: 5px;
+  font-family: pixel; /* 或其他字体 */
+  font-size: 14px; /* 调整字体大小 */
+  color: black; /* 字体颜色 */
+  border-radius: 5px; /* 可选，增加圆角效果 */
+  z-index: 10;
+}
